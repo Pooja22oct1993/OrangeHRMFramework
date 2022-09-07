@@ -20,6 +20,14 @@ public class ConfigDataProvider {
 		} catch (Exception e) {
 			System.out.println("File not found:"+e.getMessage());
 		}
+	}
+	
+	
+	public String searchKey (String keyname) {
+		return prop.getProperty(keyname);
+		
+		
+	}
 		
 		public String getUserName() {
 			return prop.getProperty("username");
